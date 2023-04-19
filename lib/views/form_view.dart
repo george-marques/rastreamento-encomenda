@@ -20,6 +20,7 @@ class _CadastroFormState extends State<CadastroForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.amber,
         title: Text('Novo pacote'),
         actions: <Widget>[
           IconButton(

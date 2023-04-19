@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rastrear_encomenda/models/pacote.dart';
+import 'package:rastrear_encomenda/views/acompanhe_view.dart';
 import 'package:rastrear_encomenda/views/form_view.dart';
 
 class PacoteTile extends StatelessWidget {
@@ -13,6 +14,14 @@ class PacoteTile extends StatelessWidget {
     return ListTile(
       leading: Icon(Icons.qr_code),
       title: Text(pacote.codigo),
+      onTap: (){
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => RastreioView(),
+          ),
+        );
+      },
       subtitle: Text(pacote.nome),
       trailing: Container(
         width: 100,
@@ -27,7 +36,7 @@ class PacoteTile extends StatelessWidget {
                   ),
                 );
               },
-              color: Colors.blueAccent,
+              color: Colors.amber,
               icon: Icon(Icons.edit),
             ),
             IconButton(

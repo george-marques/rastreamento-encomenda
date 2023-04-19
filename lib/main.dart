@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Rastreio de encomendas',
-      theme: ThemeData.dark(),
       home: HomePage(),
     );
   }
