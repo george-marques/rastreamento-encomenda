@@ -4,6 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
+O objetivo desse aplicativo é ajudar os usuários a acompanhar a localização e o status de suas entregas, será integrado com os sistemas de rastreamento de diferentes transportadoras, permitindo aos usuários inserir um número de rastreamento e obter informações em tempo real sobre o progresso da entrega.
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
