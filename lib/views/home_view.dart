@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:rastrear_encomenda/components/pacote_tile.dart';
 import 'package:rastrear_encomenda/routes/app_routes.dart';
 import 'package:rastrear_encomenda/views/entregues_view.dart';
+import 'package:rastrear_encomenda/views/login_view.dart';
 
 import '../provider/pacotes.dart';
 
@@ -88,7 +89,9 @@ class NavigationDrawer extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.logout_outlined),
               title: Text("Sair"),
-              onTap: () {},
+              onTap: () {
+                LoginView.logout(context);
+              },
             ),
           ],
         ),

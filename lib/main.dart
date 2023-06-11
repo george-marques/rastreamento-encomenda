@@ -5,6 +5,7 @@ import 'package:rastrear_encomenda/views/form_1.dart';
 import 'package:rastrear_encomenda/views/form_view.dart';
 import 'package:rastrear_encomenda/views/home_view.dart';
 import 'package:provider/provider.dart';
+import 'package:rastrear_encomenda/views/login_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,8 +20,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Rastreio de encomendas',
+        initialRoute: AppRoutes.LOGIN,
         routes: {
-          AppRoutes.HOME: (_) => HomePage(),
+          AppRoutes.LOGIN: (_) => LoginView(),
+          AppRoutes.HOME: (ctx) => HomePage(),
           AppRoutes.FORM1: (ctx) => CadastroForm1(),
           AppRoutes.FORM: (ctx) => CadastroForm()
         },
