@@ -5,7 +5,6 @@ import 'package:rastrear_encomenda/models/pacote.dart';
 import 'package:rastrear_encomenda/provider/pacotes.dart';
 import 'package:rastrear_encomenda/routes/app_routes.dart';
 import 'package:rastrear_encomenda/views/acompanhe_view.dart';
-import 'package:rastrear_encomenda/views/form_view.dart';
 
 class PacoteTile extends StatelessWidget {
   final Pacote pacote;

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rastrear_encomenda/components/pacote_tile.dart';
 import 'package:rastrear_encomenda/routes/app_routes.dart';
-import 'package:rastrear_encomenda/views/form_view.dart';
 
 import '../provider/pacotes.dart';
 

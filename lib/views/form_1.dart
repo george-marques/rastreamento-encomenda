@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rastrear_encomenda/provider/pacotes.dart';
-import 'package:rastrear_encomenda/views/home_view.dart';
-
 import '../models/pacote.dart';
 
 class CadastroForm1 extends StatefulWidget {
