@@ -5,32 +5,17 @@ import 'package:rastrear_encomenda/views/home_view.dart';
 
 import '../models/pacote.dart';
 
-class CadastroForm extends StatefulWidget {
+class CadastroForm1 extends StatefulWidget {
   @override
   _CadastroFormState createState() => _CadastroFormState();
 }
 
-class _CadastroFormState extends State<CadastroForm> {
+class _CadastroFormState extends State<CadastroForm1> {
   final _formKey = GlobalKey<FormState>();
   final Map<String, String> _formData = {};
 
-  void _loadFormData(Pacote pacote){
-    if(pacote != null) {
-      _formData['id'] = pacote.id;
-      _formData['nome'] = pacote.nome;
-      _formData['codigo'] = pacote.codigo;
-      _formData['email'] = pacote.email;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-
-    final route = ModalRoute.of(context);
-    if (route != null) {
-      final pacote = route.settings.arguments as Pacote;
-      _loadFormData(pacote);
-    }
 
 
     return Scaffold(
@@ -46,9 +31,9 @@ class _CadastroFormState extends State<CadastroForm> {
 
                 //Salvar informações do formulário no banco de dados
                 Provider.of<Pacotes>(context, listen: false).put(Pacote(id: _formData['id'].toString(),
-                    codigo: _formData['codigo'].toString(),
-                    nome: _formData['nome'].toString(),
-                    email: _formData['email'].toString(),
+                  codigo: _formData['codigo'].toString(),
+                  nome: _formData['nome'].toString(),
+                  email: _formData['email'].toString(),
                 ));
 
                 Navigator.of(context).pop();

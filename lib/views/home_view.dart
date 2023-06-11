@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:rastrear_encomenda/components/pacote_tile.dart';
-import 'package:rastrear_encomenda/data/dummy_pacotes.dart';
+import 'package:rastrear_encomenda/routes/app_routes.dart';
 import 'package:rastrear_encomenda/views/form_view.dart';
 
+import '../provider/pacotes.dart';
+
 class HomePage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    const encomendas = {...DUMMY_PACOTES};
+    final Pacotes encomendas = Provider.of(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Minha Encomenda"),
@@ -14,17 +18,14 @@ class HomePage extends StatelessWidget {
       ),
       drawer: const NavigationDrawer(),
       body: ListView.builder(
-          itemCount: encomendas.length,
-          itemBuilder: (ctx, i) => PacoteTile(encomendas.values.elementAt(i))),
+          itemCount: encomendas.count,
+          itemBuilder: (ctx, i) => PacoteTile(encomendas.byIndex(i))),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.amber,
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => CadastroForm(),
-            ),
-          );
+         Navigator.of(context).pushNamed(
+           AppRoutes.FORM1
+         );
         },
         child: Icon(Icons.add),
       ),
