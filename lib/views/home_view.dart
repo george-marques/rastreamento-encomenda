@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rastrear_encomenda/components/pacote_tile.dart';
 import 'package:rastrear_encomenda/routes/app_routes.dart';
+import 'package:rastrear_encomenda/views/entregues_view.dart';
 
 import '../provider/pacotes.dart';
 
@@ -71,7 +72,15 @@ class NavigationDrawer extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.check_box_outlined),
               title: Text("Entregues"),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EntregueView(),
+                  ),
+                );
+
+              },
             ),
             const Divider(
               color: Colors.black54,
