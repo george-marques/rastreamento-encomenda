@@ -4,6 +4,7 @@ import 'package:rastrear_encomenda/components/pacote_tile.dart';
 import 'package:rastrear_encomenda/routes/app_routes.dart';
 import 'package:rastrear_encomenda/views/entregues_view.dart';
 import 'package:rastrear_encomenda/views/login_view.dart';
+import 'package:rastrear_encomenda/views/rastrear_view.dart';
 
 import '../provider/pacotes.dart';
 
@@ -66,9 +67,18 @@ class NavigationDrawer extends StatelessWidget {
                   .pushReplacement(MaterialPageRoute(builder: (context) => HomePage())),
             ),
             ListTile(
-              leading: const Icon(Icons.access_alarms_sharp),
-              title: Text("Pendentes"),
-              onTap: () {},
+              leading: const Icon(Icons.fire_truck_sharp),
+              title: Text("Rastrear"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TelaRastreamento(),
+                  ),
+                );
+
+
+              },
             ),
             ListTile(
               leading: const Icon(Icons.check_box_outlined),
