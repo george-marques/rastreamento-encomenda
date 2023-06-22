@@ -1,0 +1,149 @@
+{
+  "rastreamentos": [
+    {
+      "codigo": "RO",
+      "descricao": "Objeto em trânsito - por favor aguarde",
+      "dtHrCriado": "2023-06-01T18:17:02",
+      "tipo": "01",
+      "unidade": {
+        "endereco": {
+          "rua": "Rua NC",
+          "numero": "12",
+          "cidade": "Curitiba",
+          "estado": "PR"
+        },
+        "tipo": "Agência dos Correios"
+      },
+      "unidadeDestino": {
+        "endereco": {
+          "rua": "Rua Rocha",
+          "numero": "10",
+          "cidade": "Palmas",
+          "estado": "TO"
+        },
+        "tipo": "Unidade de Tratamento"
+      }
+    },
+    {
+      "codigo": "AU",
+      "descricao": "Objeto em movimentação",
+      "dtHrCriado": "2023-06-05T15:20:00",
+      "tipo": "01",
+      "unidade": {
+        "endereco": {
+          "rua": "Rua NC",
+          "numero": "12",
+          "cidade": "Curitiba",
+          "estado": "PR"
+        },
+        "tipo": "Agência dos Correios"
+      },
+      "unidadeDestino": {
+        "endereco": {
+          "rua": "Rua do Carmo",
+          "numero": "5",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Agência dos Correios"
+      }
+    },
+    {
+      "codigo": "AU",
+      "descricao": "Objeto em movimentação",
+      "dtHrCriado": "2023-06-05T15:20:00",
+      "tipo": "01",
+      "unidade": {
+        "endereco": {
+          "rua": "Rua do Carmo",
+          "numero": "5",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Agência dos Correios"
+      },
+      "unidadeDestino": {
+        "endereco": {
+          "rua": "Unidade de Tratamento",
+          "numero": "",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Unidade de Tratamento"
+      }
+    },
+    {
+      "codigo": "FA",
+      "descricao": "Fiscalização aduaneira finalizada",
+      "dtHrCriado": "2023-06-05T14:21:00",
+      "tipo": "01",
+      "unidade": {
+        "endereco": {
+          "rua": "Rua do Carmo",
+          "numero": "5",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Agência dos Correios"
+      },
+      "unidadeDestino": {
+        "endereco": {
+          "rua": "Unidade de Tratamento",
+          "numero": "",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Unidade de Tratamento"
+      }
+    },
+    {
+      "codigo": "PS",
+      "descricao": "Objeto recebido pelos Correios do Brasil",
+      "dtHrCriado": "2023-06-02T03:00:00",
+      "tipo": "01",
+      "unidade": {
+        "endereco": {
+          "rua": "Rua do Carmo",
+          "numero": "5",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Agência dos Correios"
+      },
+      "unidadeDestino": {
+        "endereco": {
+          "rua": "Unidade de Tratamento",
+          "numero": "",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Unidade de Tratamento"
+      }
+    },
+    {
+      "codigo": "PC",
+      "descricao": "Seu pacote foi postado",
+      "dtHrCriado": "2023-06-02T00:00:00",
+      "tipo": "01",
+      "unidade": {
+        "endereco": {
+          "rua": "Rua do Carmo",
+          "numero": "5",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Agência dos Correios"
+      },
+      "unidadeDestino": {
+        "endereco": {
+          "rua": "Centro de Distribuição",
+          "numero": "",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ"
+        },
+        "tipo": "Centro de Distribuição"
+      }
+    }
+  ]
+}
+

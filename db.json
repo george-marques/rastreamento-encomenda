@@ -1,0 +1,40 @@
+{
+  "encomendas": [
+    {
+      "id": 1,
+      "codigo": "ABC123",
+      "nome": "Tv Samsung",
+      "status": "Entregue"
+    },
+    {
+      "id": 2,
+      "codigo": "DEF456",
+      "nome": "Smartphone A20",
+      "status": "Entregue"
+    },
+    {
+      "id": 3,
+      "codigo": "GHI789",
+      "nome": "Tênis nike",
+      "status": "Entregue"
+    },
+    {
+      "id": 4,
+      "codigo": "RTS797",
+      "nome": "Bicicleta",
+      "status": "Entregue"
+    },
+    {
+      "id": 5,
+      "codigo": "AWS108",
+      "nome": "Boné",
+      "status": "Entregue"
+    },
+    {
+      "id": 6,
+      "codigo": "FCB198",
+      "nome": "Ar-Condicionado",
+      "status": "Entregue"
+    }
+  ]
+}
