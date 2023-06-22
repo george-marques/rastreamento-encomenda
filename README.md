@@ -8,12 +8,12 @@ O objetivo desse aplicativo é ajudar os usuários a acompanhar a localização 
 
 ## Instruções de consumo de api
 
-Estou consumindo os dados vindos dessas 2 apis:
+Estou consumindo os dados vindos dessas 2 apis no json server:
 - db.json
 - rastreio.json
 
 Execute os comandos a seguir no terminal:
 
-json-server --watch db.json
-json-server --watch rastreio.json --port 4000
+- json-server --watch db.json
+- json-server --watch rastreio.json --port 4000
 
